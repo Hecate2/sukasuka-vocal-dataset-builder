@@ -11,12 +11,14 @@ from moviepy.editor import VideoFileClip
 pool = ThreadPoolExecutor(os.cpu_count())
 metadata_lock = threading.Lock()
 
+SUBTITLE_PATH = "../[XKsub] 終末なにしてますか [简日·繁日双语字幕]/[XKsub] 終末なにしてますか chs_jap"
+VIDEO_PATH = "../[MH&Airota&FZSD&VCB-Studio] Shuumatsu Nani Shitemasuka？ Isogashii Desuka？ Sukutte Moratte Ii Desuka？ [Ma10p_1080p]"
+OUTPUT_PATH = "raw-vocal-output"
+METADATA_CSV_FILE = "meta.csv"
+AUDIO_FORMAT = '.ogg'
+
 
 def main():
-    SUBTITLE_PATH = "../[XKsub] 終末なにしてますか [简日·繁日双语字幕]/[XKsub] 終末なにしてますか chs_jap"
-    VIDEO_PATH = "../[MH&Airota&FZSD&VCB-Studio] Shuumatsu Nani Shitemasuka？ Isogashii Desuka？ Sukutte Moratte Ii Desuka？ [Ma10p_1080p]"
-    OUTPUT_PATH = "raw-vocal-output"
-    METADATA_CSV_FILE = "meta.csv"
     if not os.path.exists(OUTPUT_PATH):
         os.mkdir(OUTPUT_PATH)
     if os.listdir(OUTPUT_PATH):
@@ -45,7 +47,7 @@ def main():
     if os.path.getsize(metadata_file_path) == 0:
         csv_file = open(metadata_file_path, 'w', encoding='utf_8_sig')
         csv_writer = csv.writer(csv_file)
-        csv_writer.writerow(("filename", "content", "character"))  # we are not going to write the character column in this phase
+        csv_writer.writerow(("filename", "character", "content"))  # we are not going to write the character column in this phase
     else:
         with open(metadata_file_path, 'r', encoding='utf_8_sig') as csv_file:
             csv_reader = csv.reader(csv_file)
@@ -72,8 +74,8 @@ def main():
                 end_time_str = end_time_str[2:] + '.00'
             else:
                 end_time_str = end_time_str[2:-4]
-            output_filename = f"[{str(i + 1).zfill(2)}-{str(sub_index + 1).zfill(4)}][{start_time_str}-{end_time_str}].ogg"
-            assert len(output_filename) == len('[01-0001][00.04.75-00.07.46].ogg')
+            output_filename = f"[{str(i + 1).zfill(2)}-{str(sub_index + 1).zfill(4)}][{start_time_str}-{end_time_str}]{AUDIO_FORMAT}"
+            assert len(output_filename) == len(f'[01-0001][00.04.75-00.07.46]{AUDIO_FORMAT}')
             if output_filename not in completed_filenames:
                 output_filename_and_path = os.path.join(OUTPUT_PATH, output_filename)
 
