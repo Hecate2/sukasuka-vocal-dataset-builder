@@ -1,6 +1,10 @@
-My Python codes in this repo are licensed in MIT. Be aware that the anime & subtitles may have other licenses. 
+My Python codes in this repo are licensed in MIT. Be aware that the anime & subtitles & Python packages (e.g. ffmpeg) may have other licenses. 
 
-Salute to all the contributors!
+**Salute to all the contributors!**
+
+Episodes 09 & 10 labeled by 祖安钢琴师
+
+Episodes 11 & 12 labeled by 喵る桑
 
 #### How to build your dataset
 
