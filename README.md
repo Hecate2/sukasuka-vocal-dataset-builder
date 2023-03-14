@@ -6,7 +6,7 @@ Episodes 09 & 10 labeled by 亡絮开始·祖安钢琴师
 
 Episodes 11 & 12 labeled by 喵る桑
 
-[Experimental synthesis (see the .mp3 & .flac files in the release)](https://github.com/Hecate2/sukasuka-vocal-dataset-builder/releases/tag/0.0.anime) and **[model](https://rentry.co/chtholly-sovits)** training performed by [Aya](https://github.com/Brx86)
+[Experimental synthesis (see the .mp3 & .flac files in the release)](https://github.com/Hecate2/sukasuka-vocal-dataset-builder/releases/tag/0.0.anime) and **[model](https://note.ay1.us/#/chtholly-sovits)** training performed by [Aya](https://github.com/Brx86)
 
 #### How to build your dataset
 
