@@ -34,7 +34,7 @@ def main():
     
     all_videos_path = [s for s in os.listdir(VIDEO_PATH) if s.endswith(".mkv")]
     print(all_videos_path)
-    assert len(all_subtitles_path) == 12
+    assert len(all_videos_path) == 12
     for s in all_videos_path:
         assert re.search(r"\[MH&Airota&FZSD&VCB-Studio] sukasuka \[\d{2}]\[Ma10p_1080p]\[x265_flac_aac]\.mkv", s)
     all_videos_path = [os.path.join(VIDEO_PATH, s) for s in all_videos_path]
