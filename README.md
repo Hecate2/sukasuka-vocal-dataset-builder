@@ -28,6 +28,10 @@ sukasuka-vocal-dataset-builder:
 
 Run `get_voice_from_video_and_subtitles.py`, and then **MANUALLY** label all the characters in `sukasuka-vocal-dataset-builder/meta.csv` (format: filename,character,content; check if your csv file has the exact first line `filename,character,content`). Finally run `divide_by_character.py`.
 
+#### Drama CD dataset...
+
+WIP. If you are interested, run `drama_cd_transcript.py`, and manually edit `drama-cd-transcript/drama-cd-transcript.csv`.
+
 #### Data sources
 
 **subtititles**: https://bbs.acgrip.com/thread-6124-1-1.html (with **AGPLv3** & **CC BY-NC-SA 4.0** licenses)
