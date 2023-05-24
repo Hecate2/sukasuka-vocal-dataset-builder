@@ -8,6 +8,8 @@ Episodes 11 & 12 labeled by 喵る桑
 
 [Experimental synthesis (see the .mp3 & .flac files in the release)](https://github.com/Hecate2/sukasuka-vocal-dataset-builder/releases/tag/0.0.anime) and **[model](https://note.ay1.us/#/chtholly-sovits)** training performed by [Aya](https://github.com/Brx86).
 
+[TTS model](https://huggingface.co/mio/chtholly) using ESPnet by [mio](https://huggingface.co/mio).
+
 If you are going to train your own model, **pay attention that the dataset is further cleaned and [released](https://huggingface.co/datasets/mio/sukasuka-anime-vocal-dataset) by [mio](https://huggingface.co/mio) at huggingface.co to remove non-vocal sounds, using [demucs](https://github.com/facebookresearch/demucs). My releases here STILL INCLUDES NON-VOCAL SOUNDS.** 
 
 #### How to build your dataset
