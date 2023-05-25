@@ -12,6 +12,27 @@ Episodes 11 & 12 labeled by 喵る桑
 
 If you are going to train your own model, **pay attention that the dataset is further cleaned and [released](https://huggingface.co/datasets/mio/sukasuka-anime-vocal-dataset) by [mio](https://huggingface.co/mio) at huggingface.co to remove non-vocal sounds, using [demucs](https://github.com/facebookresearch/demucs). My releases here STILL INCLUDES NON-VOCAL SOUNDS.** 
 
+![contributions-banner](contributions-banner.png)
+
+(Image created by Carzit using AI)
+
+#### Contribution guides for potential Chthollists: Following Tasks!
+
+**All kinds of contributions from anyone are welcomed**, while a perfectly ideal contributor needs to:
+
+- **[THIS IS THE MOST IMPORTANT!]** be familiar with SukaSuka characters, especially the sounds and personalities! **At least you need to know their names...** (head to `releases` to check the English names)
+- understand how AI models are trained, and why and how we are building datasets
+- know something about `.csv`, or other text-only formats like `.json` that are designed for both humans and machines
+- know about github, huggingface, civitai, etc.
+- be able to read or write basic programs
+- be familiar with AI-ops
+
+**Please always fire an issue mentioning what you are going to do before contributing, in case others may repeat (or have already repeated) your work for many times, wasting labor forces.**
+
+- Verify `meta.csv`. Surely there are mistakes.
+- Filter out non-vocal sounds in the dataset
+- Mark vocal sounds that are not suitable for training, in `meta.csv`. This requires some training experience. For example, short and meaningless `ああああ~` running away from the character's normal pitch may pollute the model. 
+
 #### How to build your dataset
 
 Place your files like this
