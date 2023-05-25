@@ -14,7 +14,7 @@ If you are going to train your own model, **pay attention that the dataset is fu
 
 ![contributions-banner](contributions-banner.png)
 
-(Image created by Carzit using AI)
+(Image created by [Carzit](https://github.com/Carzit/) using AI)
 
 #### Contribution guides for potential Chthollists: Following Tasks!
 
