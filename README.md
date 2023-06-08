@@ -10,6 +10,8 @@ Episodes 11 & 12 labeled by 喵る桑
 
 [TTS model](https://huggingface.co/mio/chtholly) using ESPnet by [mio](https://huggingface.co/mio).
 
+Dataset of Chtholly checked by mio; Ithea checked by camimo.
+
 If you are going to train your own model, **pay attention that the dataset is further cleaned and [released](https://huggingface.co/datasets/mio/sukasuka-anime-vocal-dataset) by [mio](https://huggingface.co/mio) at huggingface.co to remove non-vocal sounds, using [demucs](https://github.com/facebookresearch/demucs). My releases here STILL INCLUDES NON-VOCAL SOUNDS.** 
 
 ![contributions-banner](contributions-banner.png)
