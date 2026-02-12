@@ -59,7 +59,7 @@ Run `get_voice_from_video_and_subtitles.py`, and then **MANUALLY** label all the
 
 #### Drama CD dataset...
 
-WIP. If you are interested, run `drama_cd_transcript.py`, and manually edit `drama-cd-transcript/drama-cd-transcript.csv`.
+WIP. If you are interested, manually edit `drama-cd-transcript/drama-cd-transcript.csv`, and run `drama_cd_divide_by_character.py`.
 
 #### Data sources
 
