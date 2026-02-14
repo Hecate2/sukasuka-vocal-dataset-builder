@@ -487,7 +487,7 @@ Lucky us, it's a self-study period.
 82
 00:04:28,440 --> 00:04:32,822
 レンはそうかも知れないけど、私は先生がいないとつまんない
-莲你可能这么想，但老师不在我好无聊
+珂朵莉：莲你可能这么想，但老师不在我好无聊
 You might think so, Ren, but I'm bored without him here.
 
 83
@@ -517,7 +517,7 @@ Born in January, your fortune today for the Sign of the Twisted-Grass...
 87
 00:04:43,994 --> 00:04:45,068
 チャッラチャッロー！
-恰拉恰啰！
+艾瑟雅：恰拉恰啰！
 Ta-da!
 
 88
@@ -571,7 +571,7 @@ Aw, this fortune-telling app is really accurate.
 96
 00:05:08,457 --> 00:05:10,226
 いいんっすか？チャンス逃しても
-真的没关系吗？即使错过机会
+艾瑟雅：真的没关系吗？即使错过机会
 Is it okay? Even if you miss your chance?
 
 97
@@ -787,13 +787,13 @@ The freezing leopard that streaks across the sky!
 132
 00:06:46,785 --> 00:06:48,212
 我らが総長
-我们的总长
+：我们的总长
 Our leader...
 
 133
 00:06:48,633 --> 00:06:50,407
 ネフレン様っす！
-奈芙莲大人是也！
+：奈芙莲大人是也！
 Lady Nephren!
 
 134
@@ -817,7 +817,7 @@ Nygglatho's Gooey Cooking!
 137
 00:07:07,007 --> 00:07:11,551
 新鮮な成人男性のお肉が手に入りましたよ、ラキシュさん
-弄到了一块新鲜的成年男性肉哦，菈琪旭桑
+妮戈兰：弄到了一块新鲜的成年男性肉哦，菈琪旭桑
 I've obtained some fresh adult male meat, Miss Lakhesh.
 
 138
@@ -1003,7 +1003,7 @@ The Deduction
 168
 00:08:53,899 --> 00:08:55,732
 分かりました、ティアット刑事！
-库蓉：我明白了，缇亚忒刑警！
+可蓉：我明白了，缇亚忒刑警！
 I've got it, Detective Tiat!
 
 169
@@ -1015,7 +1015,7 @@ The culprit is a fortune-teller!
 170
 00:08:58,727 --> 00:09:02,497
 催眠術で猛獣を操ってホトケさんを狙ったんです
-用催眠术操纵猛兽袭击了被害者
+可蓉：用催眠术操纵猛兽袭击了被害者
 They used hypnosis to control a beast and attack the victim!
 
 171
@@ -1105,7 +1105,7 @@ PE is next.
 185
 00:09:57,635 --> 00:10:00,161
 うわっ！クトリ、なんすかそれ
-哇！珂朵莉，那是什么啊
+艾瑟雅：哇！珂朵莉，那是什么啊
 Whoa! Chtholly, what's that?
 
 186
@@ -1141,7 +1141,7 @@ Well, something good will happen eventually.
 191
 00:10:16,560 --> 00:10:17,187
 もう！
-真是的！
+珂朵莉：真是的！
 Jeez!
 
 192
@@ -1165,7 +1165,7 @@ The cap won't open...
 195
 00:10:25,743 --> 00:10:26,878
 うわあ、出た！
-哇，喷出来了！
+艾瑟雅：哇，喷出来了！
 Whoa, it's out!
 
 196
@@ -1261,7 +1261,7 @@ Uwaaah! Give me a break!
 211
 00:11:10,204 --> 00:11:12,204
 良いではないか、良いではないか！
-有什么关系嘛，有什么关系嘛！
+珂朵莉：有什么关系嘛，有什么关系嘛！
 It's fine, it's fine!
 
 212
@@ -1429,7 +1429,7 @@ Down?! What do you mean... hey, where are you taking me! Hey! Don't tell me...
 239
 00:12:28,044 --> 00:12:30,584
 ああああああああ！
-啊啊啊啊啊啊啊啊！
+威廉：啊啊啊啊啊啊啊啊！
 Aaaaaaaaaah!
 
 240
@@ -1543,7 +1543,7 @@ The victim used the last of his strength to leave behind the culprit's identity.
 258
 00:13:28,049 --> 00:13:31,681
 種族という、絶対的な特徴な！
-那就是种族这一绝对性的特征！
+缇亚忒：那就是种族这一绝对性的特征！
 An absolute characteristic—her race!
 
 259
