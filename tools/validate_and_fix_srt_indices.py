@@ -102,18 +102,37 @@ def process_file(path: Path, auto_fix: bool | None):
 
 def main():
     p = argparse.ArgumentParser(description='Validate and optionally fix .srt sequence indices.')
+    p.add_argument('paths', nargs='*', help='Optional file paths or globs to check (overrides --dir)')
     p.add_argument('--dir', default='drama-cd-transcript', help='Directory containing .srt files (default: drama-cd-transcript)')
     g = p.add_mutually_exclusive_group()
     g.add_argument('--fix', action='store_true', help='Automatically fix all detected index errors (assume YES)')
     g.add_argument('--no', action='store_true', help='Do not fix anything; only check (assume NO)')
     args = p.parse_args()
 
-    dd = Path(args.dir)
-    if not dd.exists() or not dd.is_dir():
-        print(f"Directory not found: {dd}")
-        sys.exit(2)
-
-    files = sorted(dd.glob('*.srt'))
+    # If positional paths are provided, expand them (accept single file, multiple files, or globs).
+    files = []
+    if args.paths:
+        for pth in args.paths:
+            ppath = Path(pth)
+            if ppath.is_file():
+                files.append(ppath)
+            else:
+                # treat as glob pattern relative to workspace
+                files.extend(sorted(Path('.').glob(pth)))
+        # remove duplicates while preserving order
+        seen = set()
+        unique_files = []
+        for f in files:
+            if f not in seen:
+                seen.add(f)
+                unique_files.append(f)
+        files = unique_files
+    else:
+        dd = Path(args.dir)
+        if not dd.exists() or not dd.is_dir():
+            print(f"Directory not found: {dd}")
+            sys.exit(2)
+        files = sorted(dd.glob('*.srt'))
     if not files:
         print(f"No .srt files found in: {dd}")
         sys.exit(0)
