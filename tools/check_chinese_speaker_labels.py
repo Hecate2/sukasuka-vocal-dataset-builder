@@ -1,7 +1,13 @@
 #!/usr/bin/env python3
-"""Scan .srt files and report subtitle lines that start with a speaker label
-of the form `Name：` where `Name` is NOT found in the Chinese names column
-of `characters.csv`.
+"""Scan .srt files and report issues in Chinese subtitle lines.
+
+Checks (structure-based):
+1) If a subtitle block has at least 2 text lines, the 2nd line is treated as Chinese.
+2) Missing speaker marker: that 2nd line does not match `Name：...`
+3) Unknown speaker name: line matches `Name：...` but name not in `characters.csv`
+
+Special rule:
+- Chinese lines starting with `：` (no speaker name) are allowed and ignored.
 
 Usage examples:
   python3 tools/check_chinese_speaker_labels.py drama-cd-transcript/*.srt
@@ -71,25 +77,46 @@ def check_file(path: Path, chinese_names: set):
     text = path.read_text(encoding='utf-8')
     lines = text.splitlines()
     for idx, times, text_lines, start_line_no in parse_srt_blocks(lines):
-        for offset, tl in enumerate(text_lines, start=0):
-            m = SPEAKER_RE.match(tl)
-            if not m:
-                continue
-            speaker = m.group('name').strip()
-            if speaker not in chinese_names:
-                problems.append({
-                    'file': str(path),
-                    'block_index': idx,
-                    'time': times,
-                    'line_no': start_line_no + 2 + offset,  # approximate file line number
-                    'text': tl,
-                    'speaker': speaker,
-                })
+        if len(text_lines) < 2:
+            continue
+
+        # Rule: when there are >=2 subtitle text lines, treat the 2nd line as Chinese.
+        offset = 1
+        tl = text_lines[offset]
+
+        stripped = tl.lstrip()
+        if stripped.startswith('：'):
+            continue
+
+        m = SPEAKER_RE.match(tl)
+        if not m:
+            problems.append({
+                'file': str(path),
+                'block_index': idx,
+                'time': times,
+                'line_no': start_line_no + 2 + offset,
+                'text': tl,
+                'type': 'missing_marker',
+                'speaker': None,
+            })
+            continue
+
+        speaker = m.group('name').strip()
+        if speaker not in chinese_names:
+            problems.append({
+                'file': str(path),
+                'block_index': idx,
+                'time': times,
+                'line_no': start_line_no + 2 + offset,  # approximate file line number
+                'text': tl,
+                'type': 'unknown_speaker',
+                'speaker': speaker,
+            })
     return problems
 
 
 def main():
-    p = argparse.ArgumentParser(description='Find speaker labels in Chinese SRT lines that are not in characters.csv')
+    p = argparse.ArgumentParser(description='Find Chinese subtitle lines with missing/invalid speaker labels')
     p.add_argument('paths', nargs='*', help='Files or glob (default: drama-cd-transcript/*.srt)')
     p.add_argument('--dir', default=None, help='Directory to scan for .srt files (overrides positional globs)')
     p.add_argument('--csv', default='characters.csv', help='Path to characters.csv (default: characters.csv)')
@@ -119,6 +146,8 @@ def main():
         sys.exit(0)
 
     total_problems = 0
+    total_missing_marker = 0
+    total_unknown_speaker = 0
     unknown_names = set()
 
     for f in files:
@@ -126,18 +155,25 @@ def main():
         if not probs:
             continue
         total_problems += len(probs)
-        print(f"\nFile: {f} — {len(probs)} unknown speaker label(s) found:")
+        print(f"\nFile: {f} — {len(probs)} issue(s) found:")
         for p in probs:
-            print(f"  [block #{p['block_index']} | {p['time']} | line {p['line_no']}] {p['text']}  -> speaker='{p['speaker']}' (NOT in characters.csv)")
-            unknown_names.add(p['speaker'])
+            if p['type'] == 'missing_marker':
+                total_missing_marker += 1
+                print(f"  [block #{p['block_index']} | {p['time']} | line {p['line_no']}] {p['text']}  -> missing speaker marker (expected Name：...)")
+            else:
+                total_unknown_speaker += 1
+                print(f"  [block #{p['block_index']} | {p['time']} | line {p['line_no']}] {p['text']}  -> speaker='{p['speaker']}' (NOT in characters.csv)")
+                unknown_names.add(p['speaker'])
 
     if total_problems == 0:
-        print('No unknown Chinese speaker labels found.')
+        print('No Chinese subtitle speaker-label issues found.')
         sys.exit(0)
 
     print('\nSummary:')
     print(f'  total files scanned: {len(files)}')
-    print(f'  total unknown speaker labels: {total_problems}')
+    print(f'  total issues: {total_problems}')
+    print(f'  missing speaker marker: {total_missing_marker}')
+    print(f'  unknown speaker name: {total_unknown_speaker}')
     if args.show_unique:
         print('\nUnknown speaker names:')
         for name in sorted(unknown_names):
