@@ -626,7 +626,7 @@ Still, Mr. Willem isn't back yet.
 00:05:38,320 --> 00:05:40,056
 レディース総長物語
 潘丽宝：淑女总长物语
-The Story of the Girl Gang Leader
+The Story of the Lady Gang Leader
 
 106
 00:05:41,545 --> 00:05:44,433
@@ -656,7 +656,7 @@ Wait, Tiat?!
 00:05:52,445 --> 00:05:58,011
 泣く子も黙るレディース軍団「プティング」の縄張りに入るた
 菈琪旭：竟敢闯进令哭闹小孩都噤声的淑女军团“布丁”的领地
-Stepping into the territory of the "Pudding" girl gang, who can make even a crying child go silent...
+Stepping into the territory of the "Pudding" Lady Gang, who can make even a crying child go silent...
 
 111
 00:05:58,011 --> 00:06:00,742
@@ -684,9 +684,9 @@ Wadadadadadadadada!
 
 115
 00:06:08,169 --> 00:06:09,094
-あ、武士！
-威廉：啊，武士！
-Ah, a samurai!
+あ、虫！
+威廉：啊，虫子！
+Ah, bugs!
 
 116
 00:06:09,870 --> 00:06:11,085
@@ -1316,7 +1316,7 @@ PE is starting.
 00:11:33,947 --> 00:11:36,291
 続・レディース総長物語
 奈芙莲：续·淑女总长物语
-The Story of the Girl Gang Leader, Continued
+The Story of the Lady Gang Leader, Continued
 
 221
 00:11:38,279 --> 00:11:39,253
@@ -1379,16 +1379,10 @@ You should leave this kind of thing to older girls.
 Shut up, you idiot!
 
 231
-00:12:03,725 --> 00:12:03,868
+00:12:03,725 --> 00:12:05,080
 ああーびゃシュ！
 威廉：啊啊！bash！
-Aaaah!
-
-232
-00:12:03,868 --> 00:12:05,080
-ああーびゃシュ！
-威廉：啊啊！bash！
-Aaaah!
+Aaaah! bash!
 
 233
 00:12:05,792 --> 00:12:10,215
@@ -1628,7 +1622,7 @@ What?! The program is cancelled?!
 00:14:15,441 --> 00:14:16,851
 それとも降板？
 菈琪旭：还是说要换主持人？
-Or am I being replaced?
+Or is Nygglatho being replaced?
 
 273
 00:14:18,303 --> 00:14:19,085
