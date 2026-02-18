@@ -14,6 +14,7 @@ import argparse
 import csv
 import os
 import re
+import concurrent.futures
 from moviepy.editor import AudioFileClip
 from typing import Optional
 
@@ -96,9 +97,10 @@ def extract_segment(source: str, start: float, end: float, dest: str, run: bool 
         sub = sub.set_fps(44100)
         sub.write_audiofile(dest, codec='libvorbis', fps=44100, ffmpeg_params=["-ac", "1"], verbose=False, logger=None)
         sub.close()
+    print(f"Extracted: {dest}")
 
 
-def main(dry_run: bool = False, cd_dir: str = CD_AUDIO_DIR):
+def main(dry_run: bool = False, cd_dir: str = CD_AUDIO_DIR, jobs: int | None = None):
     if not os.path.exists(TRANSCRIPT_CSV):
         raise FileNotFoundError(f"Transcript CSV not found at {TRANSCRIPT_CSV}")
 
@@ -148,9 +150,11 @@ def main(dry_run: bool = False, cd_dir: str = CD_AUDIO_DIR):
         print("No files were created (dry-run).\n")
         return
 
-    # Process each row (no meta.csv operations)
+    # Process each row (no meta.csv operations) — build task list first
     processed = 0
     skipped_missing = 0
+    tasks: list[tuple[str, float, float, str]] = []
+
     for filename, character, content, cd_idx, start_s, end_s in rows:
         src = cd_cache.get(cd_idx)
         out_path = os.path.join(OUTPUT_DIR, filename)
@@ -170,18 +174,55 @@ def main(dry_run: bool = False, cd_dir: str = CD_AUDIO_DIR):
             print(f"Skipping {filename}: output already exists at {out_path}")
             continue
 
-        # Run extraction
-        extract_segment(src, start_s, end_s, out_path, run=(not dry_run))
-        print(f"Extracted {filename}")
-        processed += 1
+        tasks.append((src, start_s, end_s, out_path))
+
+    if not tasks:
+        print('\nNo extraction tasks to run.')
+        print('\nFinished. Output dir:', OUTPUT_DIR)
+        print(f'Processed: {processed}, Skipped (missing source): {skipped_missing}')
+        return
+
+    # dry-run: show sample tasks
+    if dry_run:
+        print(f"\nDRY RUN: {len(tasks)} extraction tasks would be executed (no files will be written).")
+        for src, s, e, out in tasks[:10]:
+            print(f"  {os.path.basename(out)}: {s:.2f}->{e:.2f} from {src} -> {out}")
+        if len(tasks) > 10:
+            print(f"  ... ({len(tasks)-10} more)")
+        return
+
+    # Run extractions in parallel using ProcessPoolExecutor
+    max_workers = jobs if (jobs and jobs > 0) else (os.cpu_count() or 1)
+    print(f"Running {len(tasks)} extraction tasks with {max_workers} worker(s)...")
+
+    failures = 0
+    with concurrent.futures.ProcessPoolExecutor(max_workers=max_workers) as executor:
+        future_to_task = {executor.submit(extract_segment, src, s, e, out, True): (src, s, e, out)
+                          for (src, s, e, out) in tasks}
+        try:
+            for fut in concurrent.futures.as_completed(future_to_task):
+                src, s, e, out = future_to_task[fut]
+                try:
+                    fut.result()
+                except Exception as exc:
+                    failures += 1
+                    print(f"ERROR extracting {os.path.basename(out)} from {src}: {exc}")
+                else:
+                    processed += 1
+        except KeyboardInterrupt:
+            print("Interrupted by user — cancelling remaining tasks...")
+            for f in future_to_task:
+                f.cancel()
+            raise
 
     print('\nFinished. Output dir:', OUTPUT_DIR)
-    print(f'Processed: {processed}, Skipped (missing source): {skipped_missing}')
+    print(f'Processed: {processed}, Failed: {failures}, Skipped (missing source): {skipped_missing}')
 
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Slice drama CD audio into .ogg segments according to drama-cd-transcript.csv')
     parser.add_argument('--dry-run', action='store_true', help='Perform a dry-run only: check source audio and report (no extraction)')
     parser.add_argument('--cd-dir', default=CD_AUDIO_DIR, help='Directory containing source CD audio files')
+    parser.add_argument('--jobs', '-j', type=int, default=None, help='Number of worker processes to use (default: cpu_count())')
     args = parser.parse_args()
-    main(dry_run=args.dry_run, cd_dir=args.cd_dir)
+    main(dry_run=args.dry_run, cd_dir=args.cd_dir, jobs=args.jobs)
