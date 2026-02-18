@@ -134,6 +134,8 @@ def process_srt_file(srt_path: str, char_map: Dict[str, str]) -> List[Tuple[str,
             character = char_map.get(speaker_name, "")
             if not character:
                 print(f"{srt_path}:{chinese_line_no}: Chinese name {speaker_name!r} not found in characters.csv — leaving character blank")
+        if character == "Suowong":
+            character = "SuowongYoung"
 
         # parse time range
         ts_match = SRT_TIMESTAMP_RE.match(time_line)
