@@ -57,6 +57,23 @@ sukasuka-vocal-dataset-builder:
 
 Run `get_voice_from_video_and_subtitles.py`, and then **MANUALLY** label all the characters in `sukasuka-vocal-dataset-builder/meta.csv` (format: filename,character,content; check if your csv file has the exact first line `filename,character,content`). Finally run `divide_by_character.py`.
 
+Optional — extract vocals with demucs (htdemucs)
+
+- You can optionally separate vocal stems with `demucs` (htdemucs) and place results under `separated/htdemucs/<album>/vocals.wav`.
+- `drama_cd_divide_by_character.py` now supports using those `vocals.wav` files as input and will prefer them over CD `.flac` when available. Use `--separated-dir` to override the default separated directory.
+- Example Demucs command (creates `separated/htdemucs/<track>/vocals.wav`):
+
+  pip install demucs
+  demucs --two-stems=vocals "../[MH&Airota&FZSD&VCB-Studio] ... /KAXA-7502CD.flac"
+
+  (example full path used in this repo)
+
+- After producing separated vocals you can run:
+
+  python drama_cd_divide_by_character.py --separated-dir separated/htdemucs --jobs 4
+
+  This will read `vocals.wav` under `separated/htdemucs/*` where available and extract segments into `drama-cd-raw-vocal-output/`.
+
 #### Drama CD dataset...
 
 WIP. It is almost done. Just need more checks. If you are interested, manually edit srt files in `drama-cd-transcript`, and run `build_drama_cd_transcript_from_srt.py` and `drama_cd_divide_by_character.py`.

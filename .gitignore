@@ -1,4 +1,5 @@
 /.idea
-/drama-cd-raw-vocal-output
-/raw-vocal-output
+/drama-cd-raw-vocal-output*
+/raw-vocal-output*
+/separated/htdemucs
 /__pycache__
