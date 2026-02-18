@@ -92,8 +92,9 @@ def extract_segment(source: str, start: float, end: float, dest: str, run: bool 
     # Use MoviePy to load, subclip and write audio. Let errors propagate (no try/except).
     with AudioFileClip(source) as clip:
         sub = clip.subclip(start, end)
-        sub = sub.set_fps(44100).set_channels(1)
-        sub.write_audiofile(dest, codec='libvorbis', verbose=False, logger=None)
+        # ensure 44.1 kHz and force mono at write time (MoviePy AudioClip doesn't expose set_channels)
+        sub = sub.set_fps(44100)
+        sub.write_audiofile(dest, codec='libvorbis', fps=44100, ffmpeg_params=["-ac", "1"], verbose=False, logger=None)
         sub.close()
 
 
@@ -171,6 +172,7 @@ def main(dry_run: bool = False, cd_dir: str = CD_AUDIO_DIR):
 
         # Run extraction
         extract_segment(src, start_s, end_s, out_path, run=(not dry_run))
+        print(f"Extracted {filename}")
         processed += 1
 
     print('\nFinished. Output dir:', OUTPUT_DIR)
