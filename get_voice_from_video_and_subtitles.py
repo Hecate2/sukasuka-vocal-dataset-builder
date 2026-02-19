@@ -6,13 +6,15 @@ import sys
 import threading
 from concurrent.futures import ThreadPoolExecutor
 import ass
-from moviepy.editor import VideoFileClip
+from moviepy.editor import VideoFileClip, AudioFileClip
 
 pool = ThreadPoolExecutor(os.cpu_count())
 metadata_lock = threading.Lock()
 
 SUBTITLE_PATH = "../[XKsub] 終末なにしてますか [简日·繁日双语字幕]/[XKsub] 終末なにしてますか chs_jap"
 VIDEO_PATH = "../[MH&Airota&FZSD&VCB-Studio] Shuumatsu Nani Shitemasuka？ Isogashii Desuka？ Sukutte Moratte Ii Desuka？ [Ma10p_1080p]"
+# prefer separated vocals (htdemucs) when available; ignore KAXA-75* dirs in separated
+SEPARATED_DIR = "separated/htdemucs"
 OUTPUT_PATH = "raw-vocal-output"
 METADATA_CSV_FILE = "meta.csv"
 AUDIO_FORMAT = '.ogg'
@@ -25,19 +27,49 @@ def main():
         print(f"WARNING: OUTPUT_PATH {OUTPUT_PATH} not empty", file=sys.stderr)
         # input('Press ENTER to continue. This will overwrite everything including the metadata csv file!')
     
-    all_subtitles_path = [s for s in os.listdir(SUBTITLE_PATH) if s.endswith(".ass")]
-    print(all_subtitles_path)
-    assert len(all_subtitles_path) == 12
-    for s in all_subtitles_path:
-        assert re.search(r"Shuumatsu Nani Shitemasuka \d{2}\.chs_jap\.ass", s)
-    all_subtitles_path = [os.path.join(SUBTITLE_PATH, s) for s in all_subtitles_path]
-    
-    all_videos_path = [s for s in os.listdir(VIDEO_PATH) if s.endswith(".mkv")]
-    print(all_videos_path)
-    assert len(all_videos_path) == 12
-    for s in all_videos_path:
-        assert re.search(r"\[MH&Airota&FZSD&VCB-Studio] sukasuka \[\d{2}]\[Ma10p_1080p]\[x265_flac_aac]\.mkv", s)
-    all_videos_path = [os.path.join(VIDEO_PATH, s) for s in all_videos_path]
+    # collect and sort subtitle files by episode number
+    all_subtitles = [s for s in os.listdir(SUBTITLE_PATH) if s.endswith(".ass")]
+    assert len(all_subtitles) == 12
+    def epnum_from_sub(s: str) -> int:
+        m = re.search(r"(\d{2})\.chs_jap\.ass$", s)
+        return int(m.group(1)) if m else 999
+    all_subtitles = sorted(all_subtitles, key=epnum_from_sub)
+    all_subtitles_path = [os.path.join(SUBTITLE_PATH, s) for s in all_subtitles]
+
+    # collect MKV video sources (fallback)
+    all_videos = [s for s in os.listdir(VIDEO_PATH) if s.endswith(".mkv")]
+    assert len(all_videos) == 12
+    def epnum_from_mkv(s: str) -> int:
+        m = re.search(r"\[(\d{2})\]", s)
+        return int(m.group(1)) if m else 999
+    all_videos = sorted(all_videos, key=epnum_from_mkv)
+    all_videos_path = [os.path.join(VIDEO_PATH, s) for s in all_videos]
+
+    # prefer separated/htdemucs vocals.wav when available (ignore KAXA-75* dirs)
+    separated_map: dict[int, str] = {}
+    if os.path.isdir(SEPARATED_DIR):
+        for name in os.listdir(SEPARATED_DIR):
+            if name.startswith('KAXA-75'):
+                continue
+            # expect directory names to include episode like 'sukasuka [01]'
+            m = re.search(r"\[(\d{2})\]", name)
+            if not m:
+                continue
+            ep = int(m.group(1))
+            cand = os.path.join(SEPARATED_DIR, name, 'vocals.wav')
+            if os.path.isfile(cand):
+                separated_map[ep] = cand
+
+    # build final ordered source list (separated vocals preferred)
+    all_sources: list[str] = []
+    for idx in range(1, 13):
+        if idx in separated_map:
+            all_sources.append(separated_map[idx])
+        else:
+            # fall back to mkv (sorted lists should align by episode)
+            all_sources.append(all_videos_path[idx - 1])
+
+    assert len(all_sources) == len(all_subtitles_path) == 12
     
     SubtitleItem = namedtuple('SubtitleItem', ('start', 'end', 'text'))
     metadata_file_path = os.path.join(OUTPUT_PATH, METADATA_CSV_FILE)
@@ -62,7 +94,10 @@ def main():
         subtitles = [SubtitleItem(s.start, s.end, re.sub(r"{.*}", "", s.text)) for s in subtitle_doc.events if s.TYPE == 'Dialogue' and "jap" in s.style]
         print(f'{len(subtitles)} subtitles')
 
-        clip = VideoFileClip(video_path)
+        source_path = all_sources[i]
+        is_audio_source = source_path.lower().endswith('.wav')
+        clip = AudioFileClip(source_path) if is_audio_source else VideoFileClip(source_path)
+
         for sub_index, s in enumerate(subtitles):
             start_time_str = str(s.start).replace(':', '.')
             if len(start_time_str) == len('0:01:22'):
@@ -81,13 +116,17 @@ def main():
 
                 def thread_task():
                     print(f"starting {output_filename}")
-                    clip.subclip(str(s.start), str(s.end)).audio.write_audiofile(output_filename_and_path, verbose=False, logger=None)
+                    if is_audio_source:
+                        clip.subclip(str(s.start), str(s.end)).write_audiofile(output_filename_and_path, verbose=False, logger=None)
+                    else:
+                        clip.subclip(str(s.start), str(s.end)).audio.write_audiofile(output_filename_and_path, verbose=False, logger=None)
                     with metadata_lock:
                         with open(metadata_file_path, 'a', encoding='utf_8_sig') as csv_file:
                             csv_file.write(f"{output_filename},{s.text}\n")
                     print(f"finished {output_filename}")
                 # pool.submit(thread_task)
                 thread_task()
+        clip.close()
     
 
 if __name__ == '__main__':
