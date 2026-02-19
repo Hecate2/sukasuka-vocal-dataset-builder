@@ -4,7 +4,7 @@ OUTPUT_PATH = "raw-vocal-output"
 METADATA_CSV_FILE = "meta.csv"
 AUDIO_FORMAT = '.ogg'
 
-csv_file = open(os.path.join(OUTPUT_PATH, METADATA_CSV_FILE), 'r', encoding='utf_8_sig')
+csv_file = open(METADATA_CSV_FILE, 'r', encoding='utf_8_sig')
 for line in csv_file:
     if line == "filename,character,content\n":
         continue

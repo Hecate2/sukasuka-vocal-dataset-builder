@@ -1,5 +1,4 @@
 from collections import namedtuple
-import csv
 import os
 import re
 import sys
@@ -72,20 +71,10 @@ def main():
     assert len(all_sources) == len(all_subtitles_path) == 12
     
     SubtitleItem = namedtuple('SubtitleItem', ('start', 'end', 'text'))
-    metadata_file_path = os.path.join(OUTPUT_PATH, METADATA_CSV_FILE)
-    completed_filenames = set()
-    csv_file = open(metadata_file_path, 'a', encoding='utf_8_sig')
-    csv_file.close()
-    if os.path.getsize(metadata_file_path) == 0:
-        csv_file = open(metadata_file_path, 'w', encoding='utf_8_sig')
-        csv_writer = csv.writer(csv_file)
-        csv_writer.writerow(("filename", "character", "content"))  # we are not going to write the character column in this phase
-    else:
-        with open(metadata_file_path, 'r', encoding='utf_8_sig') as csv_file:
-            csv_reader = csv.reader(csv_file)
-            for line in csv_reader:
-                if line:
-                    completed_filenames.add(line[0])
+    # Do not read or write any CSV files anywhere. Determine already-completed audio
+    # segments from the existing files in the output directory so we never create
+    # or modify a .csv file.
+    completed_filenames = {f for f in os.listdir(OUTPUT_PATH) if f.lower().endswith(AUDIO_FORMAT)}
 
     for i, (video_path, subtitle_path) in enumerate(zip(all_videos_path, all_subtitles_path)):
         print(i, video_path, subtitle_path)
@@ -121,8 +110,8 @@ def main():
                     else:
                         clip.subclip(str(s.start), str(s.end)).audio.write_audiofile(output_filename_and_path, verbose=False, logger=None)
                     with metadata_lock:
-                        with open(metadata_file_path, 'a', encoding='utf_8_sig') as csv_file:
-                            csv_file.write(f"{output_filename},{s.text}\n")
+                        # track completed audio filenames in-memory only (do not write CSV)
+                        completed_filenames.add(output_filename)
                     print(f"finished {output_filename}")
                 # pool.submit(thread_task)
                 thread_task()
