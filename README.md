@@ -74,9 +74,9 @@ Optional — extract vocals with demucs (htdemucs)
 
   This will read `vocals.wav` under `separated/htdemucs/*` where available and extract segments into `drama-cd-raw-vocal-output/`.
 
-#### Drama CD dataset...
+#### Drama CD dataset
 
-WIP. It is almost done. Just need more checks. If you are interested, manually edit srt files in `drama-cd-transcript`, and run `build_drama_cd_transcript_from_srt.py` and `drama_cd_divide_by_character.py`.
+Manually edit srt files in `drama-cd-transcript`, and run `build_drama_cd_transcript_from_srt.py` and `drama_cd_divide_by_character.py`.
 
 #### Data sources
 
