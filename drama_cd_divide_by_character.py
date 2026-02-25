@@ -23,9 +23,9 @@ TRANSCRIPT_CSV = "drama-cd-transcript.csv"
 OUTPUT_DIR = "drama-cd-raw-vocal-output"
 # Directory containing full CD audio files (user should set to the folder where source audio sits)
 CD_AUDIO_DIR = r"../[MH&Airota&FZSD&VCB-Studio] Shuumatsu Nani Shitemasuka？ Isogashii Desuka？ Sukutte Moratte Ii Desuka？ [Ma10p_1080p]/CDs/"  # original path; can be overridden with --cd-dir
-# Optional directory with htdemucs-separated vocal stems (each album dir contains `vocals.wav`)
+# Optional directory with htdemucs-separated vocal stems (each album dir contains `vocals.flac`)
 SEPARATED_DIR = "separated/htdemucs"
-SEPARATED_VOCALS_NAME = "vocals.wav"
+SEPARATED_VOCALS_NAME = "vocals.flac"
 AUDIO_EXTENSIONS = {'.flac'}  # only process .flac source audio files (CD sources)
 AUDIO_FORMAT = '.ogg'
 META_CSV = 'meta.csv'
@@ -50,15 +50,15 @@ def find_cd_audio(cd_idx: str, cd_dir: str, separated_dir: Optional[str] = None)
     """Locate the source audio for a given cd index (e.g., '01').
 
     Priority (changed):
-    1. If `separated_dir` is provided, prefer an htdemucs `vocals.wav` that matches the CD index.
-    2. Otherwise (or if no matching `vocals.wav`), look for CD audio files (e.g. .flac) in `cd_dir` whose basename contains the CD index.
+    1. If `separated_dir` is provided, prefer an htdemucs `vocals.flac` that matches the CD index.
+    2. Otherwise (or if no matching `vocals.flac`), look for CD audio files (e.g. .flac) in `cd_dir` whose basename contains the CD index.
     3. When multiple candidates exist, select deterministically by sorting or by index mapping.
 
-    This makes `separated/htdemucs/*/vocals.wav` take precedence when available.
+    This makes `separated/htdemucs/*/vocals.flac` take precedence when available.
     """
     cd_search = f"cd{cd_idx}"
 
-    # 1) prefer separated/htdemucs vocals.wav when available
+    # 1) prefer separated/htdemucs vocals.flac when available
     if separated_dir and os.path.isdir(separated_dir):
         sep_candidates: list[str] = []
         for root, dirs, files in os.walk(separated_dir):
@@ -248,7 +248,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Slice drama CD audio into .ogg segments according to drama-cd-transcript.csv')
     parser.add_argument('--dry-run', action='store_true', help='Perform a dry-run only: check source audio and report (no extraction)')
     parser.add_argument('--cd-dir', default=CD_AUDIO_DIR, help='Directory containing source CD audio files')
-    parser.add_argument('--separated-dir', default=SEPARATED_DIR, help='Directory containing htdemucs separated outputs (contains <album>/vocals.wav)')
+    parser.add_argument('--separated-dir', default=SEPARATED_DIR, help='Directory containing htdemucs separated outputs (contains <album>/vocals.flac)')
     parser.add_argument('--jobs', '-j', type=int, default=None, help='Number of worker processes to use (default: cpu_count())')
     args = parser.parse_args()
     main(dry_run=args.dry_run, cd_dir=args.cd_dir, separated_dir=args.separated_dir, jobs=args.jobs)

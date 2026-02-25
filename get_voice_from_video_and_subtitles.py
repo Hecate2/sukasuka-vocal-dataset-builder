@@ -44,7 +44,7 @@ def main():
     all_videos = sorted(all_videos, key=epnum_from_mkv)
     all_videos_path = [os.path.join(VIDEO_PATH, s) for s in all_videos]
 
-    # prefer separated/htdemucs vocals.wav when available (ignore KAXA-75* dirs)
+    # prefer separated/htdemucs vocals.flac when available (ignore KAXA-75* dirs)
     separated_map: dict[int, str] = {}
     if os.path.isdir(SEPARATED_DIR):
         for name in os.listdir(SEPARATED_DIR):
@@ -55,7 +55,7 @@ def main():
             if not m:
                 continue
             ep = int(m.group(1))
-            cand = os.path.join(SEPARATED_DIR, name, 'vocals.wav')
+            cand = os.path.join(SEPARATED_DIR, name, 'vocals.flac')
             if os.path.isfile(cand):
                 separated_map[ep] = cand
 
@@ -84,7 +84,7 @@ def main():
         print(f'{len(subtitles)} subtitles')
 
         source_path = all_sources[i]
-        is_audio_source = source_path.lower().endswith('.wav')
+        is_audio_source = source_path.lower().endswith(('.wav', '.flac'))
         clip = AudioFileClip(source_path) if is_audio_source else VideoFileClip(source_path)
 
         for sub_index, s in enumerate(subtitles):
