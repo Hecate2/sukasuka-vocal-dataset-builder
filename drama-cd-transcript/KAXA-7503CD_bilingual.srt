@@ -247,8 +247,8 @@ Eh? Oh, uh, well... I just thought it'd be bad if she fed him something strange.
 42
 00:02:42,361 --> 00:02:45,643
 も、もちろん、レンが変な物食べさせるとかは無いだろけど
-珂朵莉：当，当然，莲不会让我们吃奇怪的东西
-Sure, surely, Ren would not feed us strange foods though.
+珂朵莉：当，当然，莲应该不会给他吃奇怪的东西啦
+I, I mean, Ren wouldn't feed him anything weird...
 
 43
 00:02:46,029 --> 00:02:48,771
@@ -362,7 +362,7 @@ Acorns? There are a lot of them.
 00:03:41,381 --> 00:03:44,601
 この木は椎の木。マテバシイの亜種
 妮戈兰：这是椎树。是全缘叶椎的亚种
-This is a Shii tree. A subspecies of the Lithocarpus edulis。
+This is a Shii tree. A subspecies of Lithocarpus edulis.
 
 62
 00:03:45,316 --> 00:03:47,469
@@ -636,7 +636,7 @@ Did you see? On the deer's head.
 
 107
 00:06:12,723 --> 00:06:19,437
-見たっすよ、シカさんの角と角との間、綺麗に拳のめり込んだあとか
+見たっすよ、シカさんの角と角との間、綺麗に拳のめり込んだあとが
 艾瑟雅：看到了哦，鹿角之间，有一个凹陷得很完美的拳头印子。
 I saw it. Right between the antlers, there was a perfectly sunken fist-print.
 
@@ -739,7 +739,7 @@ If you wash off the slime and boil it well,
 124
 00:07:30,430 --> 00:07:33,769
 それだけで薬いらずの滋養の高いスープになるわ
-妮戈兰：光是这样就能做成大补的中医养生汤哦。
+妮戈兰：光是这样就能做成营养高汤，连药都不用喝哦。
 it makes a very nutritious soup—no medicine needed.
 
 125
@@ -938,7 +938,7 @@ but this Red-Spiral-Pseudo-Blue-Spiral-Pseudo-Yellow-Spiral variety
 00:09:38,171 --> 00:09:41,756
 オーブンで焼くとサザエみたいな味がして美味しいわよ
 妮戈兰：会有像荣螺一样的味道，很好吃哦。
-tastes like turbot when baked.
+tastes like a turban shell when baked.
 
 158
 00:09:42,361 --> 00:09:44,213
@@ -948,7 +948,7 @@ You're so knowledgeable, Nygglatho.
 
 159
 00:09:44,611 --> 00:09:51,573
-やだ、取れない！この蜘蛛の巣、すっごく強力でネパネパしてて……
+やだ、取れない！この蜘蛛の巣、すっごく強力でネバネバしてて……
 珂朵莉：讨厌，弄不掉！这蜘蛛网，特别强力而且黏糊糊的……
 Oh no, it won't come off! This web is so strong and sticky...
 
@@ -1046,7 +1046,7 @@ By the way, what's it called?
 00:10:53,589 --> 00:10:57,799
 えっと、ヴィレムダイスキよ
 妮戈兰：这个，叫“最爱威廉”哦。
-Eh, it's called "I love Willem the most".
+Um, it's called "I love Willem the most".
 
 176
 00:10:58,063 --> 00:10:59,190
@@ -1099,8 +1099,8 @@ Hmm
 184
 00:11:23,722 --> 00:11:25,265
 それ、アワヒゲ
-奈芙莲：那个叫，“青胡子”。
-That's a "Blue Mustache."
+奈芙莲：那个叫“泡须”。
+That's a "Foam Whisker."
 
 185
 00:11:25,905 --> 00:11:28,905
@@ -1297,24 +1297,24 @@ A god... I see.
 217
 00:13:15,370 --> 00:13:16,208
 えへ
-妮戈兰：啊啊
-Ohhh
+妮戈兰：诶嘿
+Eheh
 
 218
 00:13:16,567 --> 00:13:20,338
 確かにあんな綺麗な生き物に出会えるなんて。
 珂朵莉：确实能遇到那么美丽的生物，
-Truly, to meet such a beautiful creature..
+Truly, to meet such a beautiful creature...
 
 219
 00:13:21,273 --> 00:13:22,771
 今日は来てよかったかな？
 珂朵莉：今天算是没白来吧？
- I guess I'm glad I came today.
+I guess I'm glad I came today.
 
 220
 00:13:23,145 --> 00:13:24,561
-じゃあ狩ましょうか
+じゃあ狩りましょうか
 妮戈兰：那我们就狩猎它吧。
 Shall we hunt it?
 
@@ -1340,7 +1340,7 @@ I wonder what it tastes like.
 00:13:33,533 --> 00:13:36,334
 単一種ってあまり美味しい印象ないんだけど、
 妮戈兰：只有单一个体的物种虽然通常没给我什么好吃的印象，
-Rare species don't usually leave a delicious impression,
+A species with only one of its kind doesn't usually leave a delicious impression,
 
 225
 00:13:36,725 --> 00:13:40,231
@@ -1465,7 +1465,7 @@ No, it's nothing...
 245
 00:15:00,983 --> 00:15:04,973
 それにしてもこのスープ、出汁がよく出てて香りも芳醇で。
-威廉：话虽如此这汤，出汁出得真好，香气也很浓郁。这里面加了什么？
+威廉：话说回来，这汤出汁出得真好，香气也很浓郁。
 Anyway, this soup has a great broth and a rich aroma.
 
 246
@@ -1494,7 +1494,7 @@ The shape is a bit odd though.
 
 250
 00:15:16,889 --> 00:15:20,412
-んっ、これも上手い
+んっ、これも旨い
 威廉：嗯，这个也好吃。
 Mmm, this is good too.
 
@@ -1602,9 +1602,9 @@ Huh! Wha, what?
 
 268
 00:16:15,117 --> 00:16:17,055
-山の方からすげ声がいま
+山の方からすげ声が、今
 威廉：山的方向刚才传来好大的声音
-Heard strange scream from the mountains.
+There was a loud shout from the mountains just now.
 
 269
 00:16:17,690 --> 00:16:18,913

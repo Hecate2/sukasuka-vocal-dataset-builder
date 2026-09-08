@@ -78,7 +78,7 @@ Number one.
 
 14
 00:00:38,802 --> 00:00:40,263
-アイセア・マイゼ・バルガリス
+アイセア・マイゼ・ヴァルガリス
 威廉：艾瑟雅·麦杰·瓦尔卡利斯
 Ithea Myse Valgulious.
 
@@ -156,7 +156,7 @@ Waaah!
 
 27
 00:00:58,742 --> 00:01:02,430
-アルミタ「あい」って言っだろ！
+アルミタ「あい」って言っただろ！
 阿尔弥塔：阿尔弥塔明明说了“到”嘛！
 Almita said "yuh" already!
 
@@ -186,7 +186,7 @@ You really made her cry.
 
 32
 00:01:10,015 --> 00:01:12,697
-って、俺のせいか！？そうだのか！？
+って、俺のせいか！？そうなのか！？
 威廉：哎，是我的错吗！？是这样吗！？
 Wait, is this my fault?! Is it?!
 
@@ -205,7 +205,7 @@ Ah!
 35
 00:01:23,800 --> 00:01:26,986
 ナイグラートのとろとろクッキング！
-妮戈兰：妮戈兰的浓汤料理！
+妮戈兰：妮戈兰的黏糊糊料理！
 Nygglatho's Gooey Cooking!
 
 36
@@ -265,7 +265,7 @@ Let me out!
 45
 00:01:58,823 --> 00:02:02,904
 具体的には、どういうタイプのイケメンがいいんでしょう？
-菈琪旭：具体来说，什么样的帅哥肉质比较好呢？
+菈琪旭：具体来说，什么样的帅哥比较好呢？
 Specifically, what type of handsome guy works best?
 
 46
@@ -402,7 +402,7 @@ Late at night, when I left the studio, someone was lying there.
 
 68
 00:03:26,078 --> 00:03:31,850
-あまりの美味しい……じゃなくでショックで、私、びっくりしちゃった
+あまりの美味しい……じゃなくてショックで、私、びっくりしちゃった
 妮戈兰：因为太美味……不对，太震惊了，我吓了一大跳
 I was so delicio—I mean, shocked, I was quite startled.
 
@@ -474,7 +474,7 @@ Self-Study Part
 
 80
 00:04:22,922 --> 00:04:26,341
-ヴィレム先生、アルミタ怪しに出掛けて行っちゃったじゃない？
+ヴィレム先生、アルミタあやしに出ていっちゃったじゃない？
 珂朵莉：威廉老师不是为了安慰阿尔弥塔出去了吗？
 Didn't Mr. Willem leave to go comfort Almita?
 
@@ -546,14 +546,14 @@ The... ear?! I can't do that!
 
 92
 00:04:57,405 --> 00:05:00,083
-ラッキーアイテムは汗だくの竹輪部
+ラッキーアイテムは汗だくの竹輪麩
 艾瑟雅：幸运物品是“大汗淋漓的竹轮麸”（日本关东美食）
 Your lucky item is a sweaty Chikuwabu.
 
 93
 00:05:00,502 --> 00:05:03,283
 身につけると彼と大接近できるかも！
-艾瑟雅：戴在身上的话也许能和他大步拉近距离哦！
+艾瑟雅：戴在身上的话，说不定能和他大大拉近距离哦！
 Wear it and you might get much closer to him!
 
 94
@@ -632,7 +632,7 @@ The Story of the Lady Gang Leader
 00:05:41,545 --> 00:05:44,433
 うわあ……やばそうなの来た
 威廉：哇啊……来了个不得了的家伙
-Whoa... some scary-looking people are here.
+Whoa... something scary-looking just showed up.
 
 107
 00:05:45,098 --> 00:05:46,449
@@ -654,7 +654,7 @@ Wait, Tiat?!
 
 110
 00:05:52,445 --> 00:05:58,011
-泣く子も黙るレディース軍団「プティング」の縄張りに入るた
+泣く子も黙るレディース軍団「プティング」の縄張りに入るたぁ
 菈琪旭：竟敢闯进令哭闹小孩都噤声的淑女军团“布丁”的领地
 Stepping into the territory of the "Pudding" Lady Gang, who can make even a crying child go silent...
 
@@ -798,7 +798,7 @@ Lady Nephren!
 
 134
 00:06:50,765 --> 00:06:55,831
-そう、このプティングの総長、ネフレンた、あたいのことよ
+そう、このプティングの総長、ネフレンったら、あたいのことよ
 奈芙莲：没错，布丁的总长奈芙莲，就是我
 That's right. The leader of Pudding, Nephren—that's me.
 
@@ -811,7 +811,7 @@ Ren?!
 136
 00:07:02,836 --> 00:07:06,141
 ナイグラートのとろとろクッキング！
-妮戈兰：妮戈兰的浓汤烹饪！
+妮戈兰：妮戈兰的黏糊糊料理！
 Nygglatho's Gooey Cooking!
 
 137
@@ -894,7 +894,7 @@ Ui-ui!
 
 150
 00:08:01,010 --> 00:08:05,271
-あなたのアイセア・マイゼ・バルガリスの68ラジオの時間っっす！
+あなたのアイセア・マイゼ・ヴァルガリスの68ラジオの時間っっす！
 艾瑟雅：你的艾瑟雅·麦杰·瓦尔卡利斯的68号岛广播时间！
 It's time for your "Ithea Myse Valgulious 68 Radio"!
 
@@ -1110,7 +1110,7 @@ Whoa! Chtholly, what's that?
 
 186
 00:10:01,794 --> 00:10:05,459
-ポッケに仕込んだ竹輪部がべちょべちょになっちゃったの
+ポッケに仕込んだ竹輪麩がべちょべちょになっちゃったの
 珂朵莉：塞在兜里的竹轮麸变得湿哒哒了
 The Chikuwabu I put in my pocket got all soggy.
 
@@ -1128,7 +1128,7 @@ In the end, Mr. Willem didn't come back.
 
 189
 00:10:11,926 --> 00:10:13,926
-効き目ないな、竹輪部
+効き目ないな、竹輪麩
 珂朵莉：完全没效果啊，竹轮麸
 The Chikuwabu didn't work at all.
 
@@ -1242,9 +1242,9 @@ Hmm? What was that?
 
 208
 00:11:02,644 --> 00:11:06,028
-二の腕の裏側が……なも弱くで……
-艾瑟雅：上臂的内侧……啊，那里很敏感……
-The back of my upper arms... is sensitive...
+二の腕の裏側が……なんか弱くて……
+艾瑟雅：上臂内侧……总觉得有点敏感……
+The back of my upper arms... is sensitive for some reason...
 
 209
 00:11:06,083 --> 00:11:08,182
@@ -1374,7 +1374,7 @@ You should leave this kind of thing to older girls.
 
 230
 00:12:02,364 --> 00:12:03,725
-邪かましわ、ボケ！
+やかましいわ、ボケ！
 可蓉：烦死人了，白痴！
 Shut up, you idiot!
 
@@ -1482,7 +1482,7 @@ They all match your characteristics!
 
 248
 00:13:03,208 --> 00:13:04,448
-いいがかりよ
+言いがかりよ
 妮戈兰：这是诬告
 That's a false accusation.
 
@@ -1586,7 +1586,7 @@ We interrupt this program to bring you some breaking news.
 00:13:59,087 --> 00:14:01,930
 世間を騒がせていた猟奇殺人犯が逮捕されました
 ：引起社会广泛关注的猎奇杀人犯已经落网
-A bizarre serial killer who has been causing a public outcry has been arrested.
+The bizarre murderer who had the public in an uproar has been arrested.
 
 266
 00:14:02,705 --> 00:14:03,790
@@ -1812,7 +1812,7 @@ See ya, Mr. Willem!
 
 303
 00:15:34,332 --> 00:15:35,186
-ええへいてっいてっ！
+ええへ、痛っ、痛っ！
 威廉：诶诶痛痛！
 Hey, ow ow ow!
 

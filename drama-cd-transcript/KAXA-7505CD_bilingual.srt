@@ -1,7 +1,7 @@
 1
 00:00:01,281 --> 00:00:03,762
 1日目は白紙の日だった。
-艾瑟雅：第一天是空虚的一天。
+艾瑟雅：第一天是空白的一天。
 The first day was a blank day.
 
 2
@@ -301,7 +301,7 @@ Yeah.
 51
 00:02:50,491 --> 00:02:53,674
 気分は悪いけど、心地はいい。
-艾瑟雅：虽然感觉不太舒服，但心情并不坏。
+艾瑟雅：虽然身体不舒服，但心里很舒畅。
 I feel sick, but it's comfortable here.
 
 52
@@ -630,7 +630,7 @@ Save it for later. Now, sleep. Eat.
 
 106
 00:06:40,497 --> 00:06:42,322
-そして元気いなること。
+そして元気になること。
 奈芙莲：然后早点康复。
 And get well soon.
 
@@ -716,13 +716,13 @@ The third day was a day for learning and performing the role of Ithea.
 00:07:27,790 --> 00:07:29,113
 この場所の主である
 艾瑟雅：我读了这房间的主人
-I read the diary of the owner of this place.
+I read the diary of the owner of this place,
 
 121
 00:07:29,756 --> 00:07:32,616
-本物のアイセア・マイゼ・バルガリスの日記を読んだ
+本物のアイセア・マイゼ・ヴァルガリスの日記を読んだ
 艾瑟雅：真正的艾瑟雅·麦杰·瓦尔卡利斯的日记
-The real Ithea Myse Valgulious
+the real Ithea Myse Valgulious.
 
 122
 00:07:33,657 --> 00:07:36,960
@@ -768,7 +768,7 @@ Well, you look surprisingly energetic.
 
 129
 00:07:59,702 --> 00:08:03,920
-え？お、ああ。そう、すかね？
+え？お、ああ。そうっすかね？
 艾瑟雅：哦？啊。是，是吗？
 Eh-Oh, yeah. You think so?
 
@@ -913,7 +913,7 @@ Now, before I read the rest of the diary, I'll go find something to eat.
 153
 00:09:33,016 --> 00:09:35,614
 ほらクトリ、水瓶早く運んで。
-奈芙莲：珂朵莉，快把水瓶搬走。
+奈芙莲：珂朵莉，快把水瓶搬过来。
 Come on Chtholly, hurry up and carry the water jars.
 
 154
@@ -1020,7 +1020,7 @@ Ah, no, I just thought you're a good girl.
 
 171
 00:10:31,006 --> 00:10:35,633
-え、ええ！？な、なによいきなり。
+え、ええ！？な、なによ、いきなり。
 珂朵莉：诶、诶诶！？怎、怎么突然这么说。
 W-What?! Where's this coming from all of a sudden?
 
@@ -1070,7 +1070,7 @@ Did something happen?
 00:10:52,630 --> 00:10:54,464
 ああ、えっと
 艾瑟雅：啊，那个
-Ahh, it
+Ah, um...
 
 180
 00:10:55,196 --> 00:10:55,407
@@ -1382,7 +1382,7 @@ Whoa, that's a lot of blood! You're hurt!
 00:14:28,587 --> 00:14:33,828
 お、は、本当だ。カップの破片で切ったんですかね。
 艾瑟雅：喔，啊，真的。是被杯子的碎片割到了吧。
-Oh. Ah you're right. I must have cut myself on the shards.
+Oh. Ah, you're right. I must have cut myself on the shards.
 
 232
 00:14:34,190 --> 00:14:37,697
@@ -1458,9 +1458,9 @@ Wait Ithea, what's gotten into you all of a sudden?
 
 244
 00:15:08,007 --> 00:15:10,750
-この子の心は今更取り戻せないとしたも、
+この子の心は今更取り戻せないとしても、
 艾瑟雅：即使现在这个孩子的心已经无法找回了，
-Even if this child's heart cannot be back anymore...
+Even if this child's heart can't be recovered anymore...
 
 245
 00:15:11,444 --> 00:15:15,925
@@ -1604,7 +1604,7 @@ Probably.
 00:16:24,208 --> 00:16:26,528
 そう、なんすかね。
 艾瑟雅：是……是这样吗。
-So, so it is.
+Is... is that so?
 
 269
 00:16:26,893 --> 00:16:27,255
@@ -1632,9 +1632,9 @@ Wait, Ithea, why are you crying?
 
 273
 00:16:38,126 --> 00:16:43,933
-あわわこら！怪我してる手で涙とか拭いたら大変なことになるでわ……
+あわこら！怪我してる手で涙とか拭いたら大変なことになるであわ……
 珂朵莉：哇哇喂！用受伤的手去擦眼泪的话会出大事……
-Awa-wa, hey! If you wipe your tears with your injured hand...
+Awa, hey! If you wipe your tears with your injured hand...
 
 274
 00:16:43,933 --> 00:16:46,179
@@ -1740,7 +1740,7 @@ Focus on the enemy in front of you for now.
 
 291
 00:17:39,196 --> 00:17:43,533
-うー、今日のまた生きの良さそうなティメレっすね。
+うー、今日のもまた生きの良さそうなティメレっすね。
 艾瑟雅：唔，今天的也是看上去很有活力的第六兽呢。
 Ooh, today's Timere looks quite vigorous too.
 
@@ -1868,7 +1868,7 @@ Ah, gosh, I'll provide backup. Ren, support from a bit further back.
 00:18:44,620 --> 00:18:45,523
 よろしくっすよ。
 艾瑟雅：拜托了。
-Count on you.
+Counting on you.
 
 313
 00:18:45,918 --> 00:18:47,040
@@ -1926,7 +1926,7 @@ That's what I've decided.
 
 322
 00:19:23,572 --> 00:19:27,674
-さて、今日も今日とお仕事、頑張っていきますかね！
+さて、今日もお仕事、頑張っていきますかね！
 艾瑟雅：那么，今天的工作也要加油干啦！
 Now then, let's do our best at work again today!
 

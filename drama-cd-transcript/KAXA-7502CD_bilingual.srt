@@ -19,7 +19,7 @@ You're welcome.
 4
 00:00:12,190 --> 00:00:14,792
 なんかお前、虫の居所でも悪いのか？
-威廉：你总觉得，心情不太好吗？
+威廉：不知怎的，你心情不太好？
 Is something bothering you? You seem in a bad mood.
 
 5
@@ -62,7 +62,7 @@ I can concentrate better using Willem's lap as a pillow.
 00:00:32,322 --> 00:00:36,758
 それに、体への適度な荷重は安心感をヴィレムに与える
 奈芙莲：而且，身体适度的负重能给威廉带来安心感。
-Besides, a moderate weight on your body gives you a sense of security.
+Besides, a moderate weight on the body gives Willem a sense of security.
 
 12
 00:00:37,362 --> 00:00:38,847
@@ -830,7 +830,7 @@ This handkerchief... and one more thing.
 00:07:30,654 --> 00:07:32,315
 僕を恋に落としていった
 威廉：那就是，你让我掉入了爱河。
-You let me drop into love.
+You made me fall in love.
 
 140
 00:07:32,667 --> 00:07:34,545
@@ -842,7 +842,7 @@ You let me drop into love.
 00:07:35,249 --> 00:07:36,794
 歯が浮いてきた
 奈芙莲：台词太肉麻了。
-My skin is crawling.
+My teeth are on edge.
 
 142
 00:07:37,177 --> 00:07:42,565
@@ -890,7 +890,7 @@ Right, right. Now blur the focus and pan the camera up to the sky.
 00:08:08,996 --> 00:08:10,782
 はい、オーケー！
 缇亚忒：好，OK！
-And... cut!
+Yes, OK!
 
 150
 00:08:12,716 --> 00:08:15,817
@@ -924,7 +924,7 @@ It was perfect! Just the performance I envisioned.
 
 155
 00:08:27,095 --> 00:08:31,786
-クトリ先輩は本当に何をやって最高です、ね！アイセア先輩
+クトリ先輩は本当に何をやっても最高です、ね！アイセア先輩
 缇亚忒：珂朵莉前辈无论做什么都是最棒的，对吧！艾瑟雅前辈。
 Chtholly-senpai is the best at everything. Right, Ithea-senpai?
 
@@ -1146,7 +1146,7 @@ I see. That's one way to do it.
 
 192
 00:10:28,850 --> 00:10:32,388
-じゃあ、とくらこのバルガリスでっ、と！
+じゃあ、とくらこのヴァルガリスでっ、と！
 艾瑟雅：那么，看我的瓦尔卡利斯——喝！
 Alright then, here goes with my Valgulious! Hah!
 
@@ -1272,7 +1272,7 @@ Ah! Chtholly-senpai's p-p-p-pan...
 
 213
 00:11:26,335 --> 00:11:29,332
-アりゃりゃ、今の風でチラっちゃったっすか？
+ありゃ、今の風でチラっちゃったっすか？
 艾瑟雅：哎呀呀，被刚才的风吹得露出来了？
 Oops, did that wind show a little too much?
 
@@ -1399,14 +1399,14 @@ Ah, he sank.
 234
 00:12:26,571 --> 00:12:29,409
 クトリ先輩が悪い奴らに絡まれているの
-缇亚忒：这一幕是威廉飒爽登场
-A scene, where Willem gallantly
+缇亚忒：珂朵莉前辈被坏家伙缠上，
+A scene where Chtholly-senpai is hassled by thugs...
 
 235
 00:12:29,409 --> 00:12:32,618
 颯爽とヴィレムがやっつけるシーン
-缇亚忒：打败纠缠珂朵莉前辈的坏蛋
-defeats the thugs bothering Chtholly-senpai
+缇亚忒：威廉飒爽登场把坏人解决掉的一幕
+...and Willem swoops in and takes them out.
 
 236
 00:12:33,108 --> 00:12:33,881
@@ -1586,7 +1586,7 @@ Willem closes in on Chtholly-senpai against the tree.
 00:14:11,864 --> 00:14:13,864
 腕をドンと木に押し付けて
 缇亚忒：把手“咚”地撑在树上！
- Pressing the arm against the trunk!
+Pressing the arm against the trunk!
 
 266
 00:14:14,510 --> 00:14:14,811
@@ -1700,7 +1700,7 @@ Mmm...
 00:15:11,057 --> 00:15:13,195
 も…駄目
 珂朵莉：已经…不行了
-I'm... lost
+I... I can't
 
 285
 00:15:14,646 --> 00:15:16,165

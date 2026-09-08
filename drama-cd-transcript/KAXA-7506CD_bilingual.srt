@@ -43,7 +43,7 @@ The one who swung Seniorious around on the surface 500 years ago,
 8
 00:00:19,994 --> 00:00:21,868
 人類最強勇者とかやってました
-莉莉娅：当着什么人类最强勇者的——
+莉莉娅：当过什么人类最强勇者的——
 serving as the strongest human hero...
 
 9
@@ -108,7 +108,7 @@ That's not something we're supposed to know about, right?
 
 19
 00:00:41,921 --> 00:00:44,664
-一応曲がりなりにもファンタジーっぽい世界の住人とし
+一応曲がりなりにもファンタジーっぽい世界の住人として
 史旺：好歹我们也算是奇幻风格世界的居民，
 Even if it's a stretch, as residents of a fantasy-like world,
 
@@ -493,8 +493,8 @@ What is that?
 83
 00:03:37,830 --> 00:03:41,119
 いやまぁ言葉については通話術師を雇ったり
-威廉：嘛，关于语言，雇佣了通化术师
-Well, regarding the language, I could hire translators
+威廉：嘛，关于语言，雇佣了通语术师
+Well, regarding the language, I could hire interpreter magicians
 
 84
 00:03:41,119 --> 00:03:43,381
@@ -654,14 +654,14 @@ So you're saying being quick to throw a punch whenever something happens
 
 110
 00:04:54,240 --> 00:04:55,487
-いつものお前らし？
+いつものお前らしい？
 威廉：更像平时的你吗？
 is more like you?
 
 111
 00:04:55,487 --> 00:04:57,938
 ああ……そういうこと言うか
-莉莉娅：啊……你是那个意思吗，
+莉莉娅：啊……亏你说得出口啊，
 Ah... is that what you're saying?
 
 112
@@ -883,13 +883,13 @@ but that's a separate issue.
 148
 00:06:34,690 --> 00:06:38,097
 女の子を怪しい人呼ばわりなんて感心しないんだから
-爱尔梅莉亚：把女孩子叫作可疑的人我可不佩服哦。
+爱尔梅莉亚：把女孩子叫作可疑的人，我可不敢苟同哦。
 Calling a girl "suspicious person" isn't very nice.
 
 149
 00:06:38,271 --> 00:06:41,162
 女の子……？
-威廉：女……孩子……？女孩子！？
+威廉：女……孩子……？
 A girl...?
 
 150
@@ -936,7 +936,7 @@ Hieeee... Gyaaaah!
 
 157
 00:06:51,097 --> 00:06:52,849
-ふうううう！づううう！
+ふうううう！ずううう！
 莉莉娅：呼呜呜呜！
 Huwwwww!
 
@@ -1082,7 +1082,7 @@ Seems like it.
 00:08:15,007 --> 00:08:17,896
 その辺につきまして、義理というか
 莉莉娅：关于这一点，我想请作为义理……
-Regarding that, I'd like to get a comment from you, his daughter-in-law...
+Regarding that, I'd like to get a comment from you, his daughter by obligation...
 
 182
 00:08:18,212 --> 00:08:22,427
@@ -1112,7 +1112,7 @@ Hmm, it's not quite like that.
 00:08:35,853 --> 00:08:36,504
 ほんほん
 莉莉娅：吼吼
-HmmHmm
+Hm hm.
 
 187
 00:08:36,679 --> 00:08:39,856
@@ -1548,7 +1548,7 @@ She really is lovely...
 
 259
 00:12:51,126 --> 00:12:53,389
-痛った！何すんだよ行きなり！
+痛った！何すんだよ、いきなり！
 史旺：好痛！突然干什么啊！
 Ouch! What was that for all of a sudden?!
 
@@ -1591,7 +1591,7 @@ Uwoooooah!
 266
 00:13:11,646 --> 00:13:12,453
 ううふん
-威廉：咳咳咳
+威廉：唔——哼
 Uffffffff
 
 267
@@ -1728,7 +1728,7 @@ If you say the wrong thing, you'll get yelled at from all sides!
 
 289
 00:14:22,541 --> 00:14:25,644
-え〜？夢はでっかくもっとかないとでしょ！
+え〜？夢はでっかくもたないとでしょ！
 莉莉娅：欸——？梦想就是要远大嘛！
 Eh? You gotta dream big!
 
