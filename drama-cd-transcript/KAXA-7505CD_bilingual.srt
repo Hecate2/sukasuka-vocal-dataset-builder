@@ -30,7 +30,7 @@ I... I...
 
 6
 00:00:28,840 --> 00:00:29,876
-えとー
+えっとー
 艾瑟雅：诶嘟
 Ehhh
 
@@ -60,7 +60,7 @@ Oh, you're awake?
 
 11
 00:00:48,690 --> 00:00:49,920
-貴方は？
+あんたは？
 艾瑟雅：你是？
 You are?
 
@@ -192,7 +192,7 @@ Oh?
 
 33
 00:01:49,037 --> 00:01:51,902
-嘘だと思うなら、鏡見てみなさい。
+嘘だと思うなら、鏡見てみなさいな。
 妮戈兰：不信的话，就照照镜子看吧。
 If you think I'm lying, look in the mirror.
 
@@ -246,7 +246,7 @@ If you keep pushing yourself, I'll boil you and eat you up.
 
 42
 00:02:24,364 --> 00:02:26,141
-食べっ！？
+食べっ、うっと...！？
 艾瑟雅：吃……吃掉！？
 Eat... me?!
 
@@ -330,7 +330,7 @@ The second day was a day of confusion.
 
 56
 00:03:20,004 --> 00:03:23,730
-熱はなかなか下がらず、意識もはっきりしない。
+熱はなかなか下がらず、意識もはっきりとしない。
 艾瑟雅：热度一直不退，意识也模糊不清。
 The fever didn't go down, and my consciousness was unclear.
 
@@ -768,7 +768,7 @@ Well, you look surprisingly energetic.
 
 129
 00:07:59,702 --> 00:08:03,920
-え？お、ああ。そうっすかね？
+え？ああ。えっと、そう、すかね？
 艾瑟雅：哦？啊。是，是吗？
 Eh-Oh, yeah. You think so?
 
@@ -1566,8 +1566,8 @@ If I were to rot away here, it would be...
 
 262
 00:16:01,448 --> 00:16:04,736
-よくわからないけど、君はここにいるじゃない。
-珂朵莉：虽然我听不太懂，但你不是确实在这儿吗。
+よくわからないけど、君はここにいるじゃない？
+珂朵莉：虽然我听不太懂，但你不是确实在这儿吗？
 I don't really get it, but you're here, aren't you?
 
 263

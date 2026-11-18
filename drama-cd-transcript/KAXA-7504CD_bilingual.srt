@@ -162,7 +162,7 @@ Summoning a legendary monster with ghost stories?
 
 28
 00:01:49,848 --> 00:01:54,430
-まあ、実は今日、図書室で面白い本を見つけたのだ
+まぁ、実は今日、図書室で面白い本を見つけたのだ
 潘丽宝：嘛，其实是今天在图书室发现了一本有趣的书
 Well, actually, I found an interesting book in the library today.
 
@@ -444,13 +444,13 @@ Once upon a time, in a certain old mansion...
 
 75
 00:04:12,948 --> 00:04:19,184
-お屋敷には、仲妻良じなリュカントロポスの夫婦が住んでいました
+お屋敷には、仲妻用事なリュカントロポスの夫婦が住んでいました
 可蓉：宅邸里住着一对嗯爱的狼人族夫妇
 A hilarious (harmonious) Lycanthropos couple lived in the mansion.
 
 76
 00:04:19,614 --> 00:04:20,710
-仲妻良じ？
+仲妻用事？
 珂朵莉：嗯爱？
 Hilarious? (Harmonious?)
 
@@ -828,7 +828,7 @@ So you are scared.
 
 139
 00:07:47,718 --> 00:07:50,028
-怖くなんかニャイ！
+怖くにゃんかにゃい！
 缇亚忒：才没害怕喵！
 I'm n-nyot scared!
 
@@ -1303,12 +1303,12 @@ Ren said...
 218
 00:12:27,562 --> 00:12:28,330
 見えなかったの
-奈芙莲：没看见
+珂朵莉：没看见
 I didn't see it.
 
 219
 00:12:28,764 --> 00:12:29,580
-花だか？
+花がか？
 可蓉：是花吗？
 The flower?
 
@@ -1476,9 +1476,9 @@ Ooh...
 
 247
 00:13:44,756 --> 00:13:45,581
-枕だ
-可蓉：是枕头
-It's a pillow.
+真っ暗だ
+可蓉：好黑
+It's pitch dark.
 
 248
 00:13:46,132 --> 00:13:48,419
