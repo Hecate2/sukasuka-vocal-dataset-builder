@@ -480,9 +480,9 @@ I am Nasania. Nasania Will Pacem.
 
 81
 00:04:54,397 --> 00:04:59,745
-大陸軍を守るために敵と戦って、ずっと昔に死んだはずの妖精兵。
-艾瑟雅：本该在很久以前为了守护大陆军战斗而死的妖精兵。
-A fairy soldier who should have died long ago, fighting to protect the Continental Army.
+大陸群を守るために敵と戦って、ずっと昔に死んだはずの妖精兵。
+艾瑟雅：本该在很久以前为了守护大陆群战斗而死的妖精兵。
+A fairy soldier who should have died long ago, fighting to protect the Regulu Ere.
 
 82
 00:05:01,218 --> 00:05:04,668
@@ -846,7 +846,7 @@ Nygglatho.
 
 142
 00:08:44,227 --> 00:08:48,962
-曰く、愛情に甘えるのは子供の義務ってことらしいわよ。
+曰く、愛情に甘えんのは子供の義務ってことらしいわよ。
 藤香：据说，撒娇依赖这份爱，是小孩子的义务哦。
 As she says, it seems indulging in affection is a child's duty.
 
@@ -1038,7 +1038,7 @@ So, I'll take you up on your offer.
 
 174
 00:10:41,706 --> 00:10:43,287
-置きますよ。
+おきますよ。
 艾瑟雅：我要接受了。
 I'm taking it.
 
@@ -1158,7 +1158,7 @@ Ah. Still, that's a huge number of diaries.
 
 194
 00:11:59,861 --> 00:12:03,519
-これ全部一人で書いたってのかね、噂のアイセアちゃんを。
+これ全部一人で書いたってのかね、噂のアイセアちゃんは。
 艾瑟雅：这些全是一个人写的吗？传说中的艾瑟雅酱。
 Did she write all of these by herself? The rumored Ithea.
 
@@ -1488,7 +1488,7 @@ Uhwa!
 
 249
 00:15:21,090 --> 00:15:23,572
-いきなり自分の世界で考え込まないで。
+いきなり自分の世界で考え込んでないで。
 珂朵莉：别突然一个人陷进自己的世界里思考。
 Don't suddenly get lost in your own thoughts.
 
